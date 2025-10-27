@@ -11,3 +11,7 @@ A minimal, web app that generates random passwords by difficulty level and lets 
 
 ## Security note
 This app runs entirely in your browser and never stores or sends your passwords anywhere. Always keep generated passwords private.
+
+## Demonstration
+
+<img width="803" height="574" alt="image" src="https://github.com/user-attachments/assets/e1ce251f-e9b0-436d-aa8b-bc8ce78b4598" />
