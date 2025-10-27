@@ -14,4 +14,4 @@ This app runs entirely in your browser and never stores or sends your passwords 
 
 ## Demonstration
 
-<img width="803" height="574" alt="image" src="https://github.com/user-attachments/assets/e1ce251f-e9b0-436d-aa8b-bc8ce78b4598" />
+<img width="771" height="574" alt="image" src="https://github.com/user-attachments/assets/9136194a-ee7e-4489-9d05-357e40109039" />
