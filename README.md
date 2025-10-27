@@ -4,7 +4,7 @@ A minimal, web app that generates random passwords by difficulty level and lets 
 ## Features
 - Difficulty presets: **Easy, Medium, Strong, Insane, Custom**
 - Toggles for **lowercase, uppercase, numbers, symbols**
-- Option to **exclude ambiguous** characters (`Il1O0o{}[]()/\'"`~,;:<>`)
+- Option to **exclude ambiguous** characters (`Il1O0o{}[]()/\'"~,;:<>`)
 - **Secure RNG** using `window.crypto.getRandomValues`
 - **Strength meter** (entropy estimate)
 - One-click **Copy**
