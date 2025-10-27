@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>Secure Password Generator</h1>
+      <p class="subtitle">Generate random passwords by difficulty and copy with one click.</p>
+    </header>
+
+    <section class="panel">
+      <div class="row">
+        <label for="level">Difficulty</label>
+        <select id="level">
+          <option value="easy">Easy</option>
+          <option value="medium" selected>Medium</option>
+          <option value="strong">Strong</option>
+          <option value="insane">Insane</option>
+          <option value="custom">Custom</option>
+        </select>
+      </div>
+
+      <div class="row">
+        <label for="lengthRange">Length: <span id="lengthValue">12</span></label>
+        <input type="range" id="lengthRange" min="6" max="64" value="12" />
+      </div>
+
+      <fieldset class="grid">
+        <legend>Character Sets</legend>
+        <label class="checkbox">
+          <input type="checkbox" id="lower" checked />
+          <span>Lowercase (a–z)</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" id="upper" checked />
+          <span>Uppercase (A–Z)</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" id="numbers" checked />
+          <span>Numbers (0–9)</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" id="symbols" />
+          <span>Symbols (!@#$...)</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" id="excludeAmbiguous" checked />
+          <span>Exclude ambiguous (Il1O0o{}[]/\`~)</span>
+        </label>
+      </fieldset>
+
+      <div class="row">
+        <label for="password">Password</label>
+        <div class="password-row">
+          <input id="password" type="text" readonly aria-live="polite"/>
+          <button id="copyBtn" class="secondary" title="Copy to clipboard">Copy</button>
+        </div>
+      </div>
+
+      <div class="row actions">
+        <button id="generateBtn">Generate</button>
+      </div>
+
+      <div class="strength">
+        <div class="strength-bar" id="strengthBar"></div>
+        <div class="strength-label" id="strengthLabel">Strength: —</div>
+      </div>
+    </section>
+
+    <footer>
+      <p class="footnote">
+        Uses <code>window.crypto.getRandomValues</code> for secure randomness. Keep your passwords safe — this page never stores them.
+      </p>
+    </footer>
+  </main>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
